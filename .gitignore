@@ -1,0 +1,5 @@
+# Ignore docs folder
+docs/
+
+# Ignore zip files
+*.zip
