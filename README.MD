@@ -4,7 +4,7 @@ NutriGenius began as a capstone project aimed at addressing Indonesia's childhoo
 
 As a passionate developer committed to making a proof of concept on this project to bring it to completion.
 
-## Original Project 
+# Original Project 
 
 NutriGenius is an innovative mobile application designed to combat childhood stunting through intelligent nutrition monitoring and personalized recommendations.
 
