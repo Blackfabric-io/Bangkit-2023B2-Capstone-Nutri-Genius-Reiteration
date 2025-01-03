@@ -1,5 +1,62 @@
-# Ignore docs folder
+# Root
+*.zip
 docs/
 
-# Ignore zip files
-*.zip
+# Flutter/Dart
+**/build/
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+*.iml
+.idea/
+.vscode/
+*.log
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+venv/
+.env
+
+# ML specific
+*.h5
+*.tflite
+*.pb
+*.ckpt
+*.pth
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS specific
+.DS_Store
+Thumbs.db
+
+# Cloud
+*.pem
+*.key
+service-account.json
+.env.yaml
+.env.local
