@@ -1,6 +1,17 @@
 # NutriGenius
 
-NutriGenius is an intelligent mobile application designed to help monitor and prevent child stunting in Indonesia through advanced food recognition and growth tracking capabilities.
+NutriGenius began as a capstone project 
+aimed at addressing Indonesia's childhood 
+stunting crisis, which affects 
+approximately 27.7% of the country's 
+toddler population. The original team 
+reached ~50% completion, establishing 
+foundations in machine learning, mobile 
+development, and cloud infrastructure.
+
+As a passionate developer committed to 
+making a proof of concept on this project 
+to bring it to completion.
 
 ## Project Structure
 
