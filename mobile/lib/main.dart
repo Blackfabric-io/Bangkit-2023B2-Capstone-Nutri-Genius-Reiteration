@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:nutrigenius/services/auth/auth_service.dart';
+import 'package:nutrigenius/screens/auth/auth_gate.dart';
 
-void main() {
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
   runApp(const NutriGeniusApp());
 }
 
@@ -13,45 +17,15 @@ class NutriGeniusApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'NutriGenius',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.green,
+        visualDensity: VisualDensity.adaptivePlatformDensity,
         fontFamily: 'Poppins',
-        useMaterial3: true,
       ),
-      home: const HomeScreen(),
-    );
-  }
-}
-
-class HomeScreen extends StatelessWidget {
-  const HomeScreen({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('NutriGenius'),
-      ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            const Text(
-              'Welcome to NutriGenius',
-              style: TextStyle(
-                fontSize: 24,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
-            const SizedBox(height: 20),
-            ElevatedButton(
-              onPressed: () {
-                // TODO: Implement food scanning
-              },
-              child: const Text('Scan Food'),
-            ),
-          ],
-        ),
+      home: RepositoryProvider(
+        create: (context) => AuthService(),
+        child: const AuthGate(),
       ),
     );
   }
