@@ -2,6 +2,7 @@
 *.zip
 docs/
 _docs/
+logo
 
 # Flutter/Dart
 **/build/
