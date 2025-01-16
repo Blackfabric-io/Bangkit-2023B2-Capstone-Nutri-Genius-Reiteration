@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:nutrigenius/screens/profile/profile_screen.dart';
+import 'package:nutrigenius/screens/food_scanner/food_scanner_screen.dart';
 import 'package:nutrigenius/services/auth/auth_service.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -49,7 +50,12 @@ class HomeScreen extends StatelessWidget {
             const SizedBox(height: 40),
             ElevatedButton.icon(
               onPressed: () {
-                // TODO: Implement food scanning functionality
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const FoodScannerScreen(),
+                  ),
+                );
               },
               icon: const Icon(Icons.camera_alt),
               label: const Text('Scan Food'),

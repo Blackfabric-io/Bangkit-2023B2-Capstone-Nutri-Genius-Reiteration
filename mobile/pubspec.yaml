@@ -63,6 +63,8 @@ flutter:
     - assets/images/
     - assets/icons/
     - assets/ml_models/
+    - assets/ml_models/food_recognition_model.tflite
+    - assets/ml_models/food_labels.txt
 
   fonts:
     - family: Poppins
