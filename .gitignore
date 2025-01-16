@@ -1,6 +1,7 @@
 # Root
 *.zip
 docs/
+_docs/
 
 # Flutter/Dart
 **/build/
